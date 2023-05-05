@@ -14,7 +14,7 @@ namespace Magnemi.DeckOfCardsApp
             set_deck();
 
             String message = "Show filled deck in order: \n\n";
-            inputOutput.displayMessage(message + get_deck());
+            inputOutput.displayMessage(message + displayDeckOfCards());
 
             shuffler.set_shuffledDeck(_deck);
 
@@ -29,14 +29,9 @@ namespace Magnemi.DeckOfCardsApp
 
             return true;
         }
-        public String get_deck()
+        public Card[] get_deck()
         {
-            String deckOfCards = "";
-            for (int count = 0; count < 52; count++)
-            {
-                deckOfCards += _deck[count].get_rank() + " of " + _deck[count].get_suit() + "\n\n";
-            }
-            return deckOfCards;
+            return _deck;
         }
 
         public Card[] fillDeckWithCards()
@@ -60,6 +55,15 @@ namespace Magnemi.DeckOfCardsApp
             return deck;
         }
 
+        public String displayDeckOfCards()
+        {
+            String deckOfCards = "";
+            for (int count = 0; count < 52; count++)
+            {
+                deckOfCards += _deck[count].get_rank() + " of " + _deck[count].get_suit() + "\n";
+            }
+            return deckOfCards;
+        }
 
     }
 }

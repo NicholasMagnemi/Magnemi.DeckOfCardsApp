@@ -10,21 +10,21 @@
   <Class Name="Magnemi.DeckOfCardsApp.DeckOfCards">
     <Position X="4.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgACAAAAoAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAgACAAAAoAAAAAAAA=</HashCode>
       <FileName>DeckOfCards.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Magnemi.DeckOfCardsApp.MultipleDecksOfCards">
     <Position X="6.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAGA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAABAAAAAACAAAAAAA=</HashCode>
       <FileName>MultipleDecksOfCards.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Magnemi.DeckOfCardsApp.ShuffleDeck">
     <Position X="8.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAABAEAAAAAAAEAAAAAAAAAA=</HashCode>
       <FileName>ShuffleDeck.cs</FileName>
     </TypeIdentifier>
   </Class>

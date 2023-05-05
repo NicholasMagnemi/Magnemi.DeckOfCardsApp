@@ -14,7 +14,7 @@ namespace Magnemi.DeckOfCardsApp
         {
 
         }
-        
+
         public ShuffleDeck(Card[] unShuffledDeck)
         {
             InputOutput inputOutput = new InputOutput();
@@ -41,7 +41,7 @@ namespace Magnemi.DeckOfCardsApp
         public String get_shuffledDeck()
         {
             String shuffledDeckOfCards = "";
-            
+
             for (int count = 0; count < 52; count++)
             {
                 shuffledDeckOfCards += _shuffledDeck[count].get_rank() + " of " + _shuffledDeck[count].get_suit() + "\n\n";
@@ -60,11 +60,7 @@ namespace Magnemi.DeckOfCardsApp
                 int randomIndex = random.Next(0, unShuffledDeck.Length);
                 tempDeck[count] = unShuffledDeck[randomIndex];
             }
-             return unShuffledDeck = tempDeck;
+            return unShuffledDeck = tempDeck;
         }
-
-        public DeckOfCards shuffler(DeckOfCards unShuffledDeck)
-        {
-
-        }
+    }
 }

@@ -5,7 +5,7 @@
         static void Main(String[] args)
         {
             new DeckOfCards();
-            //new MultipleDecksOfCards();
+            new MultipleDecksOfCards();
         }
     }
 }
