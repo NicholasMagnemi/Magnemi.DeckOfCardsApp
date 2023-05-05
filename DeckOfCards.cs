@@ -4,22 +4,28 @@ namespace Magnemi.DeckOfCardsApp
 {
     public class DeckOfCards
     {
-        private Card[] _deck = null;
+        private Card[] _deck;
 
         public DeckOfCards()
         {
+            ShuffleDeck shuffler = new ShuffleDeck();
             InputOutput inputOutput = new InputOutput();
 
             set_deck();
 
             String message = "Show filled deck in order: \n\n";
             inputOutput.displayMessage(message + get_deck());
+
+            shuffler.set_shuffledDeck(_deck);
+
+            message = "Show shuffled deck: \n\n";
+            inputOutput.displayMessage(message + shuffler.get_shuffledDeck());
+
         }
 
         public bool set_deck()
         {
             _deck = fillDeckWithCards();
-            
 
             return true;
         }
@@ -51,8 +57,9 @@ namespace Magnemi.DeckOfCardsApp
                     deck[count++] = card;
                 }
             }
-
             return deck;
         }
+
+
     }
 }
